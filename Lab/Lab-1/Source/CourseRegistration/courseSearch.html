@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="courseApp.js"></script>
+    <style>
+        .navbar{
+            background-color: #306FAD;
+            border-color: #306FAD;
+            margin-bottom: 0px;
+        }
+        #search_bar{
+            background-color: aliceblue;
+            border-color: aliceblue;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<nav id="nav_bar" class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color: #FFFFFF; font-family: Lato; font-size: 25px">UMKC</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav" id="nav" style="background-color: #306FAD">
+                <li class="active" style="color: #306FAD"><a href="#" style="color: #FFFFFF">Search</a></li>
+                <li><a href="#" style="color: #FFFFFF">Register</a></li>
+                <li><a href="#" style="color: #FFFFFF">Catalog</a></li>
+                <li><a href="#" style="color: #FFFFFF">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" style="color: #FFFFFF">
+                    <span class="glyphicon glyphicon-user" style="color: #FFFFFF"></span> My Courses</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<div class="jumbotron" id="search_bar">
+    <div class="container">
+
+        <div class="row">
+        <div class="form-group">
+            <div class="col-md-4">
+            <label for="term">Term:</label>
+            <select class="form-control" id="term">
+                <option disabled selected value> -- select an option -- </option>
+                <option>Spring 2018</option>
+                <option>Summer 2018</option>
+                <option>Fall 2018</option>
+            </select>
+            </div>
+            <div class="col-md-4">
+                <label for="level">Level:</label>
+                <select class="form-control" id="level">
+                    <option disabled selected value> -- select an option -- </option>
+                    <option>Undergraduate</option>
+                    <option>Graduate</option>
+                    <option>Post-graduate</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="career">Career:</label>
+                <select class="form-control" id="career">
+                    <option disabled selected value> -- select an option -- </option>
+                    <option>Law</option>
+                    <option>Arts</option>
+                    <option>Medical</option>
+                    <option>Computer Science</option>
+                </select>
+            </div>
+        </div>
+        </div>
+
+        <div class="img-responsive" style="margin-top: 20px">
+
+        </div> <button type="button" class="btn btn-primary center-block" onclick="searchCourses()" type="submit" align="right">
+        <span class="glyphicon glyphicon-search"></span> Search
+    </button>
+    </div>
+</div>
+
+<div class="container" id="results" >
+    <div class="table-responsive">
+    <table class="table" id="coursesTable" style="visibility: hidden">
+        <!-- Table Header -->
+        <tr style="background-color: #FFCB3E; color: #FFFFFF">
+            <th scope="col"> </th>
+            <th scope="col">Course#</th>
+            <th scope="col">Course</th>
+            <th scope="col">Description</th>
+            <th scope="col">Units</th>
+            <th scope="col">Instructor</th>
+            <th scope="col">Days&Time</th>
+            <th scope="col">Room</th>
+            <th scope="col">SeatsAvailable</th>
+            <th scope="col">Rating</th>
+        </tr>
+        <!-- Table Header -->
+
+        <tbody style="background-color: #FFFFFF">
+        </tbody>
+    </table>
+</div>
+
+</div>
+</body>
+</html>

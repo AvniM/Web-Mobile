@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="courseRegister.js"></script>
+    <style>
+        .navbar{
+            background-color: #306FAD;
+            border-color: #306FAD;
+            margin-bottom: 0px;
+        }
+    </style>
+
+</head>
+<body>
+<nav id="nav_bar2" class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color: #FFFFFF; font-family: Lato; font-size: 25px">UMKC</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar2">
+            <ul class="nav navbar-nav" id="nav2" style="background-color: #306FAD">
+                <li><a href="#" style="color: #FFFFFF">Search</a></li>
+                <li class="active" style="color: #306FAD"><a href="#" style="color: #FFFFFF">Register</a></li>
+                <li><a href="#" style="color: #FFFFFF">Catalog</a></li>
+                <li><a href="#" style="color: #FFFFFF">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" style="color: #FFFFFF">
+                    <span class="glyphicon glyphicon-user" style="color: #FFFFFF"></span> My Courses</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<br>
+<div class="container" id="register" >
+    <div>
+        <h3 style="font-family: Lato; color:#306FAD">Course Details</h3>
+    </div>
+    <div class="table-responsive">
+        <table class="table" id="courseDetails">
+            <!-- Table Header -->
+            <tr style="background-color: #FFCB3E; color: #FFFFFF">
+                <th scope="col">Status</th>
+                <th scope="col">Course#</th>
+                <th scope="col">Course</th>
+                <th scope="col">Description</th>
+                <th scope="col">Units</th>
+                <th scope="col">Location</th>
+                <th scope="col">Instruction Mode</th>
+            </tr>
+            <!-- Table Header -->
+
+            <tbody style="background-color: #FFFFFF">
+            </tbody>
+        </table>
+    </div>
+<br>
+    <div>
+        <h3 style="font-family: Lato; color:#306FAD">Other Details</h3>
+    </div>
+    <div class="table-responsive">
+        <table class="table" id="otherDetails">
+            <!-- Table Header -->
+            <tr style="background-color: #FFCB3E; color: #FFFFFF">
+                <th scope="col">Instructor</th>
+                <th scope="col">Days&Time</th>
+                <th scope="col">Room</th>
+                <th scope="col">Total Capacity</th>
+                <th scope="col">Available Seats</th>
+                <th scope="col">Waitlist Capacity</th>
+            </tr>
+            <!-- Table Header -->
+            <tbody style="background-color: #FFFFFF">
+            </tbody>
+        </table>
+    </div>
+<br>
+    <button onclick="registerCourse()" id="registerBtn" type="button" class="btn btn-info">Register</button>
+
+</div>
+</body>
+</html>
