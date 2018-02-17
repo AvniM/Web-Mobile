@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+    <link  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="js/news.js"></script>
+
+</head>
+<body>
+<div class="container" id="home" >
+    <div class="col-md-6 col-md-offset-3" id="register" style="display: none">
+        <form action="news.html" style="border:1px solid #ccc; padding: 10px;">
+            <h1>Register</h1>
+            <p>Please create an account to access online news</p>
+            <hr>
+            <b>Email</b>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <b>Password</b>
+            <input type="password" placeholder="Enter Password" name="pass" required>
+            <b>Repeat Password</b>
+            <input type="password" placeholder="Repeat Password" name="pass-repeat" required>
+            <button type="submit" class="signupbtn">Register</button>
+            <p>Already have an account! <a onclick="toggle()" style="color:dodgerblue">Login</a></p>
+        </form>
+    </div>
+
+    <div class="col-md-6 col-md-offset-3" id="login">
+        <form action="news.html" style="border:1px solid #ccc; padding: 10px;">
+            <h1>Login</h1>
+            <p>Please login to access online news</p>
+            <hr>
+            <b>Email</b>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <b>Password</b>
+            <input type="password" placeholder="Enter Password" name="pass" required>
+            <button type="submit" class="loginbtn">Login</button>
+            <p>Don't have an account! <a onclick="toggle()" style="color:dodgerblue">Register</a></p>
+        </form>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>

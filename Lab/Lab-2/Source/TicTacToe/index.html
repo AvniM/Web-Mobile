@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html data-ng-app="TicTacToe">
+<head>
+    <title>Tic-Tac-Toe</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <link  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="js/tictactoe.js"></script>
+</head>
+
+<body ng-controller="TicTacToeCtrl">
+<div class="container">
+    <h1>Tic Tac Toe</h1>
+    <div class="game">
+        <div class="board" ng-repeat="row in board">
+            <button type="button"
+                    class="btn-lg"
+                    ng-repeat="cell in row"
+                    ng-disabled="!unplayed(cell)"
+                    ng-class="cell.value"
+                    ng-click="flip(cell)">{{ cell.value }}
+            </button>
+        </div>
+        <h4 id="turn" ng-show="!gameOver()">Player {{ currentPlayer }}'s Turn</h4>
+        <br>
+        <h2 id="result"></h2>
+        <button id=resetBtn
+                type="button"
+                ng-hide="!gameOver()"
+                class="btn-lg"
+                data-ng-click="reset()">New Game</button>
+    </div>
+</div>
+</body>
+</html>

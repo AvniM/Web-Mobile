@@ -1,0 +1,46 @@
+* {
+    text-align: center;
+    font-family: "Verdana"
+}
+
+body {
+    padding: 20px 40px;
+    font-family: "Verdana";
+    background: url('../images/background.png');
+    background-color: #fffff0;
+}
+
+button {
+    background-color: white;
+    border-color: palegoldenrod;
+}
+
+h1 {
+    font-family: "Bookman Old Style";
+    color: sienna;
+    font-size: 40px;
+}
+
+h2, h4 {
+    font-family: "Bookman Old Style";
+    color: sienna;
+}
+
+.board {
+    zoom: 2.5;
+}
+
+.X {
+    color: salmon;
+}
+
+.O {
+    color: orange;
+}
+
+#resetBtn {
+    color: white;
+    alignment: center;
+    background-color: lightcoral;
+    border-color: coral;
+}
