@@ -1,0 +1,26 @@
+body {
+    background: url('../images/background.jpg');
+}
+
+#header {
+    background:#FFFFFF;
+    border-color:#FF0000;
+}
+
+#headerTitle {
+    color:#FF0000;
+    vertical-align:middle;
+    text-align:center;
+    margin-top: 5px;
+}
+
+#videoName{
+    text-align:center;
+    vertical-align:middle;
+    font-size: larger;
+}
+
+.wrapper {
+    text-align: center;
+}
+
