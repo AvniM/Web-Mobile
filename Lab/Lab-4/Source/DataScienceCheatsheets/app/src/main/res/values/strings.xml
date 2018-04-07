@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Data Science Cheatsheets</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="login_text">Login to access Cheatsheets</string>
+    <string name="register_text">Register to access Cheatsheets</string>
+
+    <!-- Added for social login -->
+    <string name="facebook_app_id">1773892695996355</string>
+    <string name="fb_login_protocol_scheme">fb1773892695996355</string>
+
+</resources>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <TableRow
+        android:background="@color/yellow"
+        android:padding="8dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Topic"
+            android:textSize="20sp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cheatsheets"
+            android:textSize="20sp"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Python"
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="31"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hadoop"
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="11"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Scala"
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="9"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="R"
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="21"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Java"
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SQL"
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="26"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Spark"
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="7"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MapReduce"
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="9"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Analytics"
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="22"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Machine Learning"
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="38"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Deep Learning"
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="30"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TensorFlow"
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+
+</TableLayout>
