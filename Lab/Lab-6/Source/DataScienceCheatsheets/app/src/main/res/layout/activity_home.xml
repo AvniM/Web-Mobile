@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_silver"
+    tools:context="com.android.umkc.datasciencecheatsheets.HomeActivity">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <ImageView
+            app:srcCompat="@drawable/topics"
+            android:id="@+id/imagePos0"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="topics"/>
+
+        <ImageView
+            app:srcCompat="@drawable/cheatsheets"
+            android:id="@+id/imagePos1"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="cheatsheets"/>
+
+        <ImageView
+            app:srcCompat="@drawable/settings"
+            android:id="@+id/imagePos2"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="settings"/>
+
+        <ImageView
+            app:srcCompat="@drawable/help"
+            android:id="@+id/imagePos3"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="help"/>
+    </GridLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/gridLayout"
+        android:layout_above="@+id/btnSpeakContainer"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/voiceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btnSpeakContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#f5f5f5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_microphone_2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSpeak"
+            android:layout_margin="5dp"
+            android:text="@string/hint" />
+    </LinearLayout>
+
+</RelativeLayout>
